@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bound"
+        android:elevation="3dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tablayoutV"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/tablayoutV"
+        android:layout_width="66dp"
+        android:layout_height="match_parent"
+        android:background="#EDEDED"
+        android:visibility="visible"
+        app:indicator_color="@color/colorPrimary"
+        app:indicator_gravity="left"
+        app:indicator_width="2dp"
+        app:tab_height="50dp"
+        app:tab_mode="scrollable"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="32dp">
+
+    </q.rorbin.verticaltablayout.VerticalTabLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="281dp"
+        android:layout_height="214dp"
+        android:src="@drawable/fri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tablayoutV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
