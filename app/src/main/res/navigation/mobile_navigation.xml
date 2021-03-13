@@ -23,8 +23,8 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/navigation_mine2"
-        android:name="com.yeck.refrigerator.navigation_mine"
-        android:label="fragment_navigation_mine"
+        android:id="@+id/navigation_mine"
+        android:name="com.yeck.refrigerator.ui.mine.Navigation_mine"
+        android:label="我的"
         tools:layout="@layout/fragment_navigation_mine" />
 </navigation>

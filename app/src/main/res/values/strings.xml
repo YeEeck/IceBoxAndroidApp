@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Refrigerator</string>
+    <string name="app_name">慧冰</string>
     <string name="hello_world">hello</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_home">首页</string>
@@ -9,4 +9,5 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mine">我的</string>
 </resources>

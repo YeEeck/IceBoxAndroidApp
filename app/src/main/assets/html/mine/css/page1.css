@@ -1,0 +1,33 @@
+.mainTable {
+    margin: auto;
+    width: 90%;
+}
+
+.listElem {
+    margin: auto;
+    width: 100%;
+    box-shadow: 2px 2px 8px lightgray;
+    border-radius: 25px;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+	background-color: rgb(254,254,254);
+}
+
+#my_message {
+    display: inline;
+    text-align: center;
+    height: 4em;
+    font-size: 1.5em;/* 
+    border-style: solid;
+    border-color: royalblue;
+    border-width: 1.5px;
+    border-radius: 10px; */
+    color: #1296db;
+    padding: 5px;
+}
+
+.imgButton {
+    height: 2.5em;
+}
+
