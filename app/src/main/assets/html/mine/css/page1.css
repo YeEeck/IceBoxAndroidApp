@@ -1,3 +1,23 @@
+.linka {
+    text-decoration: none;
+    color: black;
+}
+
+.linka:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.linka:link {
+    text-decoration: none;
+    color: black;
+}
+
+.linka:hover {
+    text-decoration: none;
+    color: black;
+}
+
 .mainTable {
     margin: auto;
     width: 90%;
@@ -11,14 +31,15 @@
     margin-top: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
-	background-color: rgb(254,254,254);
+    background-color: rgb(254, 254, 254);
 }
 
 #my_message {
     display: inline;
     text-align: center;
     height: 4em;
-    font-size: 1.5em;/* 
+    font-size: 1.5em;
+    /* 
     border-style: solid;
     border-color: royalblue;
     border-width: 1.5px;
@@ -27,7 +48,25 @@
     padding: 5px;
 }
 
+.myMessageText:visited {
+    text-decoration: none;
+    color: #1296db;
+}
+
+.myMessageText:link {
+    text-decoration: none;
+    color: #1296db;
+}
+
+.myMessageText:hover {
+    text-decoration: none;
+    color: #1296db;
+}
+
 .imgButton {
     height: 2.5em;
 }
 
+.lableChoice {
+    margin-left: 1.5em;
+}
