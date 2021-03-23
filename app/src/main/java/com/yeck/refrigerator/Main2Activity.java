@@ -118,9 +118,9 @@ public class Main2Activity extends AppCompatActivity implements NotificationsFra
     @SuppressLint("SetTextI18n")
     @Override
     public void changeName() {
-        HelloText = findViewById(R.id.HelloText);
-        assert HelloText != null;
-        HelloText.setText(name + "，欢迎使用慧冰智能冰箱。");
+//        HelloText = findViewById(R.id.HelloText);
+//        assert HelloText != null;
+//        HelloText.setText(name + "，欢迎使用慧冰智能冰箱。");
     }
 
     @SuppressLint("SetJavaScriptEnabled")

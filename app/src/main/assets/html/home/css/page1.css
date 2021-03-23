@@ -27,6 +27,7 @@
 }
 
 .mainTable {
+    margin-top: 1em;
     margin: auto;
     width: 90%;
 }
@@ -104,3 +105,6 @@ select {
     margin-left: 1.5em;
 }
 
+body{
+    margin: 0;
+}
