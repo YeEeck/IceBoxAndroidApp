@@ -2,9 +2,15 @@ package com.yeck.refrigerator;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.view.View;
+import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -13,6 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -26,6 +33,7 @@ import com.yeck.refrigerator.ui.home.HomeFragment;
 import com.yeck.refrigerator.ui.mine.Navigation_mine;
 import com.yeck.refrigerator.ui.notifications.NotificationsFragment;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -145,7 +153,9 @@ public class Main2Activity extends AppCompatActivity implements NotificationsFra
                 view.loadUrl(url);
                 return true;
             }
+
         });
+
         webView.loadUrl("file:///android_asset/html/home/home.html");
     }
 

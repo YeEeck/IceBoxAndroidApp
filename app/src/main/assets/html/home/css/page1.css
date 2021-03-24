@@ -2,6 +2,8 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+
 .backTitle{
     font-size: large;
 }
@@ -86,6 +88,7 @@
     width: 60%;
     border: none;
     outline: none;
+    background-color: white;
 }
 
 .button {
@@ -107,4 +110,10 @@ select {
 
 body{
     margin: 0;
+}
+
+.circleImg{
+    border-radius: 100px;
+    height: 3em;
+    width: 3em;
 }
