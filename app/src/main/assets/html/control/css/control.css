@@ -1,0 +1,25 @@
+.menu1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
+    background-color: lightblue;
+    padding: 0.5em;
+    font-size: small;
+    border-bottom: solid 1px lightgray;
+}
+
+.menu2{
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    font-size: small;
+    border-bottom: solid 1px lightgray;
+}
+
+.menu1Elem{
+    /* display: block; */
+}
+
+.menutd{
+    width: 25%;
+}

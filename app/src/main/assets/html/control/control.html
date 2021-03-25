@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="YeEeck" />
+    <meta charset="utf-8">
+    <meta name="generator" content="Visual Studio Code" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link href="css/page1.css" type="text/css" rel="stylesheet" />
+    <link href="css/control.css" type="text/css" rel="stylesheet" />
+    <script src="js/control.js"></script>
+    <title></title>
+</head>
+
+<body style="background-color: rgb(247, 247, 247); ">
+    <table class="mainTable">
+        <tr>
+            <td align="center">
+                <input type="text" placeholder="请输入搜索内容"
+                    style="width: 80%;outline: none;margin-top: 5px;font-size: medium;"> <span
+                    style="color: #1296db;">&nbsp;搜索</span>
+            </td>
+        </tr>
+    </table>
+
+    <table class="menu1">
+        <tr>
+            <td onclick="clickMenu1(0)">
+                <span class="menu1Elem" style="border-bottom: solid 1px #1296db;color: #1296db;">分类</span>
+            </td>
+            <td onclick="clickMenu1(1)">
+                <span class="menu1Elem">位置</span>
+            </td>
+            <td onclick="clickMenu1(2)">
+                <span class="menu1Elem">时间</span>
+            </td>
+        </tr>
+    </table>
+    <div style="overflow:scroll" id="menu2Out">
+        <table class="menu2">
+            <tr>
+                <td onclick="clickMenu2(0)" class="menutd">
+                    <span class="menu2Elem" style="border-bottom: solid 1px #1296db;color: #1296db;">蔬菜</span>
+                </td>
+                <td onclick="clickMenu2(1)" class="menutd">
+                    <span class="menu2Elem">水果</span>
+                </td>
+                <td onclick="clickMenu2(2)" class="menutd">
+                    <span class="menu2Elem">酒水</span>
+                </td>
+                <td onclick="clickMenu2(3)" class="menutd">
+                    <span class="menu2Elem">肉类</span>
+                </td>
+                <td onclick="clickMenu2(4)" class="menutd">
+                    <span class="menu2Elem">淀粉类</span>
+                </td>
+                <td onclick="clickMenu2(5)" class="menutd">
+                    <span class="menu2Elem">零食</span>
+                </td>
+                <td onclick="clickMenu2(6)" class="menutd">
+                    <span class="menu2Elem">其他</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table class="mainTable">
+        <tr class="fruit bxUp">
+            <td colspan="2">
+                <a href="otherPage/item.html" class="linka">
+                    <div class="listElem">
+                        <table class="mainTable" style="font-size: smaller;" cellspacing="10">
+                            <tr>
+                                <td width="1%">
+                                    <img src="img/apple.jpg" class="imgButton" />
+                                </td>
+                                <td>
+                                    苹果
+                                </td>
+                                <td align="right" style="color: red;">
+                                    新鲜度：5天
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div style="width: 100%; height: 1px; background-color: lightgray;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    保鲜层
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: gray;">
+                                    温度：7℃
+                                </td>
+                                <td colspan="2" style="color: gray;" align="right">
+                                    湿度：45%
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </td>
+        </tr>
+        <tr class="vegatable bxDown">
+            <td colspan="2">
+                <a href="otherPage/item.html" class="linka">
+                    <div class="listElem">
+                        <table class="mainTable" style="font-size: smaller;" cellspacing="10">
+                            <tr>
+                                <td width="1%">
+                                    <img src="img/bocai.jpg" class="imgButton" />
+                                </td>
+                                <td>
+                                    菠菜
+                                </td>
+                                <td align="right" style="color: red;">
+                                    新鲜度：3天
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div style="width: 100%; height: 1px; background-color: lightgray;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    保鲜室(底层)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: gray;">
+                                    温度：7℃
+                                </td>
+                                <td colspan="2" style="color: gray;" align="right">
+                                    湿度：45%
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </td>
+        </tr>
+        <tr class="drink doorIn">
+            <td colspan="2">
+                <a href="otherPage/item.html" class="linka">
+                    <div class="listElem">
+                        <table class="mainTable" style="font-size: smaller;" cellspacing="10">
+                            <tr>
+                                <td width="1%">
+                                    <img src="img/fanta.jpg" class="imgButton" />
+                                </td>
+                                <td>
+                                    芬达
+                                </td>
+                                <td align="right" style="color: red;">
+                                    新鲜度：3个月
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div style="width: 100%; height: 1px; background-color: lightgray;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    保鲜室
+                                </td>
+                                <td>
+                                    x 1
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: gray;">
+                                    温度：7℃
+                                </td>
+                                <td colspan="2" style="color: gray;" align="right">
+                                    湿度：45%
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </td>
+        </tr>
+        <tr class="meat freeze2">
+            <td colspan="2">
+                <a href="otherPage/item.html" class="linka">
+                    <div class="listElem">
+                        <table class="mainTable" style="font-size: smaller;" cellspacing="10">
+                            <tr>
+                                <td width="1%">
+                                    <img src="img/meat.jpg" class="imgButton" />
+                                </td>
+                                <td>
+                                    鲜肉
+                                </td>
+                                <td align="right" style="color: red;">
+                                    新鲜度：3天
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div style="width: 100%; height: 1px; background-color: lightgray;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    冷藏室
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: gray;">
+                                    温度：7℃
+                                </td>
+                                <td colspan="2" style="color: gray;" align="right">
+                                    湿度：45%
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </td>
+        </tr>
+        <tr class="df freeze1">
+            <td colspan="2">
+                <a href="otherPage/item.html" class="linka">
+                    <div class="listElem">
+                        <table class="mainTable" style="font-size: smaller;" cellspacing="10">
+                            <tr>
+                                <td width="1%">
+                                    <img src="img/mt.jpg" class="imgButton" />
+                                </td>
+                                <td>
+                                    馒头
+                                </td>
+                                <td align="right" style="color: red;">
+                                    新鲜度：15天
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div style="width: 100%; height: 1px; background-color: lightgray;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    冷藏室
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: gray;">
+                                    温度：7℃
+                                </td>
+                                <td colspan="2" style="color: gray;" align="right">
+                                    湿度：45%
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </td>
+        </tr>
+        <tr class="snack bxMid">
+            <td colspan="2">
+                <a href="otherPage/item.html" class="linka">
+                    <div class="listElem">
+                        <table class="mainTable" style="font-size: smaller;" cellspacing="10">
+                            <tr>
+                                <td width="1%">
+                                    <img src="img/snack.jpg" class="imgButton" />
+                                </td>
+                                <td>
+                                    小零食
+                                </td>
+                                <td align="right" style="color: red;">
+                                    新鲜度：27天
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div style="width: 100%; height: 1px; background-color: lightgray;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    保鲜室
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="color: gray;">
+                                    温度：7℃
+                                </td>
+                                <td colspan="2" style="color: gray;" align="right">
+                                    湿度：45%
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

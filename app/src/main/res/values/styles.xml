@@ -9,7 +9,7 @@
     </style>
 
     <style name="BlueButtonStyle" parent="ThemeOverlay.AppCompat">
-        <item name="colorButtonNormal">#84a9ac</item>
+        <item name="colorButtonNormal">#1296db</item>
     </style>
 
     <style name="EmptyButtonStyle" parent="ThemeOverlay.AppCompat">
