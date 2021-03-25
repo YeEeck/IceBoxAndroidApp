@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="YeEeck" />
+    <meta charset="utf-8">
+    <meta name="generator" content="Visual Studio Code" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link type="text/css" rel="stylesheet" href="../css/page1.css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
+    <link type="text/css" rel="stylesheet" href="../css/item.css" />
+    <script src="../js/item.js"></script>
+    <title></title>
+</head>
+
+<body style="background-color: rgb(247, 247, 247);">
+    <table class="mainTable">
+        <tr>
+            <td>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="../control.html" class="linka backTitle">&#60; 主页</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 3em;">
+                            <img src="../img/egg.jpg" class="circleImg">
+                        </td>
+                        <td style="font-size: large;">
+                            &nbsp;&nbsp;鸡蛋
+                        </td>
+                        <td style="text-align: right;color: gray;">
+                            1.5千卡/g
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <div class="itemBack">
+        <br />
+        <table class="itemTable">
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;热量
+                </td>
+                <td width="50%" colspan="3">
+
+                </td>
+            </tr>
+            <tr style="font-size: smaller;">
+                <td rowspan="3">
+                    <span style="font-size: 4em;" id="kal">1.5</span> 千卡
+                </td>
+                <td>
+                    <div class="littleDot" style="background-color: orange;"></div>&nbsp;碳水
+                </td>
+                <td>
+                    6.9%
+                </td>
+                <td>
+                    <span id="tg">0.03</span>克
+                </td>
+            </tr>
+            <tr style="font-size: smaller;">
+                <td>
+                    <div class="littleDot" style="background-color: blue;"></div>&nbsp;蛋白质
+                </td>
+
+                <td>
+                    37.6%
+                </td>
+
+                <td>
+                    <span id="dg">0.15</span>克
+                </td>
+            </tr>
+            <tr style="font-size: smaller;">
+                <td>
+                    <div class="littleDot" style="background-color: greenyellow;"></div>&nbsp;脂肪
+                </td>
+                <td>
+                    55.5%
+                </td>
+
+                <td>
+                    <span id="zg">0.1</span>克
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <div style="float: right; margin-right: 2em;">
+        <button class="bigButton" onclick="inputChange(0)">-</button>
+        <input class="bigButton" style="text-align: center;" type="text" value="1" id="page" onkeyup="changed()" />
+        <button class="bigButton" onclick="inputChange(1)">+</button>
+    </div>
+    <br /><br /><br />
+    <span style="margin-left: 2em;font-size: large;">详细信息</span>
+    <div class="listElem">
+        <table class="mainTable">
+            <tr>
+                <td style="font-size: large;">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <span class="lableChoice">存放时间：12.23</span>
+                </td>
+                <td>
+                    <span class="lableChoice">过期时间：12.27</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="lableChoice">推荐温度：12℃</span>
+                </td>
+                <td>
+                    <span class="lableChoice">推荐湿度：40%</span>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div style="float: right;">
+        <a href="item/set.html" class="linka">
+            <button class="setButton">编 辑</button>
+        </a>
+    </div>
+    <br/><br/><br/><br/>
+
+
+</body>
+
+</html>

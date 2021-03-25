@@ -1,0 +1,119 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+.backTitle{
+    font-size: large;
+}
+
+.linka {
+    text-decoration: none;
+    color: black;
+}
+
+.linka:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.linka:link {
+    text-decoration: none;
+    color: black;
+}
+
+.linka:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.mainTable {
+    margin-top: 1em;
+    margin: auto;
+    width: 90%;
+}
+
+.listElem {
+    margin: auto;
+    font-size: medium;
+    width: 100%;
+    box-shadow: 2px 2px 8px lightgray;
+    border-radius: 25px;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(254, 254, 254);
+}
+
+#my_message {
+    display: inline;
+    text-align: center;
+    height: 4em;
+    font-size: 1.5em;
+    /* 
+    border-style: solid;
+    border-color: royalblue;
+    border-width: 1.5px;
+    border-radius: 10px; */
+    color: #1296db;
+    padding: 5px;
+}
+
+.myMessageText:visited {
+    text-decoration: none;
+    color: #1296db;
+}
+
+.myMessageText:link {
+    text-decoration: none;
+    color: #1296db;
+}
+
+.myMessageText:hover {
+    text-decoration: none;
+    color: #1296db;
+}
+
+.imgButton {
+    height: 2.5em;
+}
+
+.lableChoice {
+    margin-left: 1.5em;
+}
+
+.input {
+    height: 2em;
+    width: 60%;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.button {
+    width: 10em;
+    height: 3em;
+}
+
+select {
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.sub{
+    color: gray;
+    font-size: small;
+    margin-left: 1.5em;
+}
+
+body{
+    margin: 0;
+}
+
+.circleImg{
+    border-radius: 100px;
+    height: 3em;
+    width: 3em;
+}
