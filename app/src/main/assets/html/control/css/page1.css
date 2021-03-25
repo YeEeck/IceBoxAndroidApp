@@ -1,10 +1,16 @@
+@font-face {
+    font-family: fzht;
+    src: url(../../font/FZHTJW.TTF);
+}
+
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: fzht;
 }
 
 
 
-.backTitle{
+.backTitle {
     font-size: large;
 }
 
@@ -102,17 +108,17 @@ select {
     background-color: white;
 }
 
-.sub{
+.sub {
     color: gray;
     font-size: small;
     margin-left: 1.5em;
 }
 
-body{
+body {
     margin: 0;
 }
 
-.circleImg{
+.circleImg {
     border-radius: 100px;
     height: 3em;
     width: 3em;

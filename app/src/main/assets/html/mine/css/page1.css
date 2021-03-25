@@ -1,8 +1,14 @@
-* {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+@font-face {
+    font-family: fzht;
+    src: url(../../font/FZHTJW.TTF);
 }
 
-.backTitle{
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: fzht;
+}
+
+.backTitle {
     font-size: large;
 }
 
@@ -41,6 +47,7 @@
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: rgb(254, 254, 254);
+    font-size: large;
 }
 
 #my_message {
@@ -55,6 +62,7 @@
     border-radius: 10px; */
     color: #1296db;
     padding: 5px;
+    font-weight: bold;
 }
 
 .myMessageText:visited {
@@ -98,9 +106,8 @@ select {
     background-color: white;
 }
 
-.sub{
+.sub {
     color: gray;
     font-size: small;
     margin-left: 1.5em;
 }
-

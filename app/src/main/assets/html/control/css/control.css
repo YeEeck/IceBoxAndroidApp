@@ -8,7 +8,7 @@
     border-bottom: solid 1px lightgray;
 }
 
-.menu2{
+.menu2 {
     width: 100%;
     text-align: center;
     padding: 0.5em;
@@ -16,10 +16,21 @@
     border-bottom: solid 1px lightgray;
 }
 
-.menu1Elem{
+.menu1Elem {
     /* display: block; */
 }
 
-.menutd{
+.menutd {
     width: 25%;
+}
+
+.scanInput {
+    border-radius: 5px;
+    padding-left: 1em;
+    border: none;
+    height: 2em;
+    width: 80%;
+    outline: none;
+    margin-top: 5px;
+    box-shadow: 1px 1px 5px lightgray;
 }

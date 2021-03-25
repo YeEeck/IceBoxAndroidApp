@@ -3,15 +3,17 @@ var ClassList1 = new Array("vegatable", "fruit", "drink", "meat", "df", "snack",
 var ClassList2 = new Array("bxDown", "bxMid", "bxUp", "doorIn", "freeze1", "freeze2");
 
 function clickMenu1(num) {
-    var menu1List = new Array("保鲜底层", "保鲜中层", "保鲜上层", "保鲜门内侧", "冷冻1", "冷冻2");
+    var menu1List = new Array("保鲜底层", "保鲜中层", "保鲜上层", "保鲜门内侧", "冷冻室1", "冷冻室2");
     var menu2List = new Array("蔬菜", "水果", "酒水", "肉类", "淀粉类", "零食", "其他");
     var menu1Elem = document.getElementsByClassName("menu1Elem");
     menu1Elem[num].style.color = "#1296db";
     menu1Elem[num].style.borderBottom = "solid 1px #1296db";
+    menu1Elem[num].style.fontWeight = "bold";
     for (var i = 0; i < 3; i++) {
         if (i != num) {
             menu1Elem[i].style.color = "black";
             menu1Elem[i].style.borderBottom = "none";
+            menu1Elem[i].style.fontWeight = "normal";
         }
     }
     var menu2Elemtd = document.getElementsByClassName("menutd");
@@ -47,10 +49,12 @@ function clickMenu2(num) {
     var menu2Elem = document.getElementsByClassName("menu2Elem");
     menu2Elem[num].style.color = "#1296db";
     menu2Elem[num].style.borderBottom = "solid 1px #1296db";
+    menu2Elem[num].style.fontWeight = "bold";
     for (var i = 0; i < menu2Elem.length; i++) {
         if (i != num) {
             menu2Elem[i].style.color = "black";
             menu2Elem[i].style.borderBottom = "none";
+            menu2Elem[i].style.fontWeight = "normal";
         }
     }
     changeShow(num);
