@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment {
 
     public interface backTalk2{
         void changeName();
-        void setHomeWebview();
+        void setHomeWebview(Fragment frag);
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment {
 
         super.onStart();
         ((HomeFragment.backTalk2) requireActivity()).changeName();
-        ((HomeFragment.backTalk2) requireActivity()).setHomeWebview();
+        ((HomeFragment.backTalk2) requireActivity()).setHomeWebview(this);
     }
 
     private void requestPermission() {

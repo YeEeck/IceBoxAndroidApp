@@ -20,8 +20,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.viewpager.widget.ViewPager;
@@ -133,7 +135,7 @@ public class Main2Activity extends AppCompatActivity implements NotificationsFra
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
-    public void setHomeWebview() {
+    public void setHomeWebview(final Fragment frag) {
         WebView webView = findViewById(R.id.webViewHome);
         WebSettings settings = webView.getSettings();
         assert settings != null;
@@ -151,6 +153,12 @@ public class Main2Activity extends AppCompatActivity implements NotificationsFra
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
+                //底部导航栏跳转，frag是接口回调的参数
+                if (url.equals("file:///android_asset/html/home/change.html")) {
+                    NavHostFragment
+                            .findNavController(frag)
+                            .navigate(R.id.navigation_dashboard);
+                }
                 return true;
             }
 
