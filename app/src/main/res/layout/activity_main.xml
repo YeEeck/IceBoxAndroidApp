@@ -78,6 +78,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/empty_button"
+        android:onClick="regButtonClicked"
         android:text="立即注册"
         android:textColor="#80000000"
         android:textSize="12sp"

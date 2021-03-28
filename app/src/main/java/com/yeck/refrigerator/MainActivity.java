@@ -84,7 +84,10 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("password", passwordInput.getEditText().getText().toString());
             startActivity(intent);
         }
+    }
 
-
+    public void regButtonClicked(View view){
+        Intent intent = new Intent(this, regActivity.class);
+        startActivity(intent);
     }
 }
