@@ -85,10 +85,10 @@ public class Main2Activity extends AppCompatActivity implements NotificationsFra
                 titles = new ArrayList<>();
                 titles.add("自动");
                 titles.add("饮食");
-                titles.add("食材");
+                titles.add("母婴");
                 titles.add("美食");
                 titles.add("健康");
-                titles.add("精选");
+                titles.add("时令");
                 Collections.addAll(titles);
             }
 
