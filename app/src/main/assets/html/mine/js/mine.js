@@ -1,15 +1,17 @@
 var timeView;
+var onOff = new Array(0, 0, 0, 0);
 
-window.onload = function() {
-	timeView = document.getElementById("time");
-	console.log(timeView.innerText)
-	updateTime();
-	setInterval(updateTime,1000);
+window.onload = function () {
+
 }
 
-function updateTime() {
-	var d = new Date(),
-		str = "";
-	str += d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-	timeView.innerText = str;
+function batButtonClick(num) {
+    var ButtonImg = document.getElementsByClassName("barImg");
+    if (onOff[num] == 0) {
+        ButtonImg[num].src = ButtonImg[num].src.replace("off", "on");
+        onOff[num] = 1;
+    } else{
+        ButtonImg[num].src = ButtonImg[num].src.replace("on", "off");
+        onOff[num] = 0;
+    }
 }

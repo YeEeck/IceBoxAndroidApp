@@ -21,7 +21,7 @@ public class NotificationsFragment extends Fragment {
     private NotificationsViewModel notificationsViewModel;
 
     public interface talkBack{
-        void change();
+        void change(Fragment frag);
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -37,6 +37,6 @@ public class NotificationsFragment extends Fragment {
     public void onStart() {
 
         super.onStart();
-        ((talkBack)getActivity()).change();
+        ((talkBack)getActivity()).change(this);
     }
 }
